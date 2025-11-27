@@ -218,7 +218,7 @@ const Portfolio = () => {
     setGeneratedEmail('');
 
     try {
-      const apiKey = ""; // API Key injected by environment
+      const apiKey = import.meta.env.VITE_GEMINI_API_KEY; // API Key injected by environment
       const prompt = `
         Act as a professional recruiter from ${recruiterData.company} hiring for a ${recruiterData.role}.
         Write a compelling, personalized outreach email to Neerav Babel.
@@ -264,7 +264,7 @@ const Portfolio = () => {
     setSimAnalysis('');
     
     try {
-      const apiKey = ""; // API Key injected by environment
+      const apiKey = import.meta.env.VITE_GEMINI_API_KEY; // API Key injected by environment
       const prompt = `
         You are a Senior System Architect. Analyze this live simulation state from Neerav's portfolio architecture demo (based on his EchoQuery project):
         
